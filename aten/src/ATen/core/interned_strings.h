@@ -67,12 +67,13 @@ namespace c10 {
   _(prim, ConstantChunk)           \
   _(prim, NoneGenerator)           \
   _(aten, floordiv)                \
-  _(prim, MemoryFence)             \
   _(prim, fork)                    \
   _(prim, RaiseException)          \
   _(aten, append)                  \
   _(aten, __not__)                 \
   _(aten, format)                  \
+  _(aten, _assign)                 \
+  _(aten, _set_item)               \
   FORALL_ATEN_BASE_SYMBOLS(_)      \
   _(onnx, Add)                     \
   _(onnx, Concat)                  \
